@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import Cards from './components/productos/productos';
 
 
 function App() {

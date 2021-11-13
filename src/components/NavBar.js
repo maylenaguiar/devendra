@@ -1,4 +1,5 @@
 import "./NavBar.css";
+import { Icon } from 'semantic-ui-react'
 
 const NavBar = () => {
   return (
@@ -15,6 +16,9 @@ const NavBar = () => {
         </li>
         <li>
           <a href="#">Contacto</a>
+        </li>
+        <li>
+        <a href="#"><Icon name='shopping cart' /> </a>
         </li>
       </ul>
     </nav>
