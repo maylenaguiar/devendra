@@ -9,6 +9,7 @@ function App() {
   return (
     <Fragment>
       <NavBar />
+      <itemListContainer />
       <div className="App">
         <h1 style={{color: "purple" }}>
           Bienvenidos a la experiencia Devendra

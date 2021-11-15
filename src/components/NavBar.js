@@ -1,8 +1,10 @@
 import "./NavBar.css";
-import { Icon } from 'semantic-ui-react'
+import "./Cart/CartWidget";
+import CardWidget from "./Cart/CartWidget";
 
 const NavBar = () => {
   return (
+    <>
     <nav className="container">
       <ul>
         <li>
@@ -17,11 +19,10 @@ const NavBar = () => {
         <li>
           <a href="#">Contacto</a>
         </li>
-        <li>
-        <a href="#"><Icon name='shopping cart' /> </a>
-        </li>
       </ul>
     </nav>
+    <CardWidget />
+    </>
   );
 };
 
