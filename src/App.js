@@ -1,15 +1,13 @@
 import React, { Fragment } from "react";
 import "./App.css";
-import NavBar from "./components/NavBar";
-import Cards from './components/productos/productos';
-
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
-  
   return (
     <Fragment>
       <NavBar />
-      <itemListContainer />
+      <ItemListContainer />
       <div className="App">
         <h1 style={{color: "purple" }}>
           Bienvenidos a la experiencia Devendra

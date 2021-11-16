@@ -18,8 +18,6 @@ class Productos extends Component{
             Precio ="$300" 
             Aromas = "Madera, Plátano, etc" 
             Foto = "https://http2.mlstatic.com/D_NQ_NP_640353-MLA42438117480_072020-O.jpg"/>
-
-
             </div>
         );
        
