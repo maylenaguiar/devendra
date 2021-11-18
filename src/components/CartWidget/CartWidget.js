@@ -6,7 +6,7 @@ const CardWidget = () => {
   return(
   <>
 		<a className="cart" href="/">
-    	<Icon name="shopping cart" />{" "}
+    	<Icon name="shopping cart" size ="large" />{" "}
   	</a>
 	</>
 	)

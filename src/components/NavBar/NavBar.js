@@ -18,8 +18,8 @@ const NavBar = () => {
         <li>
           <a href="#">Contacto</a>
         </li>
+        <CartWidget />
       </ul>
-      <CartWidget />
     </nav>
     </>
   );
