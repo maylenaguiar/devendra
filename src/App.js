@@ -1,13 +1,14 @@
 import React, { Fragment } from "react";
 import "./App.css";
+import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
   return (
     <Fragment>
+      <Header />
       <NavBar />
-      <ItemListContainer />
       <div className="App">
         <h1 style={{color: "purple" }}>
           Bienvenidos a la experiencia Devendra
@@ -16,6 +17,7 @@ function App() {
           Tienda Mágica
         </h2>
       </div>
+      <ItemListContainer />
     </Fragment>
   );
 }
