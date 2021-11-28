@@ -2,11 +2,18 @@ import React, { Fragment } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
+import Home from '../src/Views/Home/Home';
+import About from '../src/Views/About/About';
+import Contact from '../src/Views/Contact/Contact';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 function App() {
   return (
-    <Fragment>
+    
+    <Router>
       <Header />
       <NavBar />
       <div className="App">
@@ -17,8 +24,14 @@ function App() {
           Tienda Mágica
         </h2>
       </div>
-      <ItemListContainer />
-    </Fragment>
+      <Routes>
+      <Route path='/' exact element={<Home />}/>
+      <Route path='/About' exact element={<About />} />
+      <Route path='/Products' exact element={<ItemListContainer />} />
+      <Route path='/Contact' exact element={<Contact />} />
+      </Routes>
+    </Router>
+    
   );
 }
 

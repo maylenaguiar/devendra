@@ -11,12 +11,8 @@
     padding: 10px;
   }
   
-  li {
+  .naveg{
     margin: 20px;
     list-style-type: none;
-    
-  }
-  li a{
-      color: thistle;
-      list-style: none;
+   color: thistle;
   }

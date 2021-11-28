@@ -15,15 +15,15 @@ setLoader(false);
         }
         pedirDatos();
     }, []);
-    return(
+    return( 
         <div>
-            {loader 
-            ? "Cargando..."
-           : <h1 className="items">Productos Recomendados</h1> && (
-            <ItemList  productos= {products} />
-    )}
-        </div>
-    );     
+        {loader 
+        ? "Cargando..."
+       : <h1 className="items">Productos Recomendados</h1> && (
+        <ItemList  productos= {products} />
+)}
+    </div>
+);     
 };
 
 export default ItemListContainer;
