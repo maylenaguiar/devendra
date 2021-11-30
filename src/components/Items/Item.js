@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Item.css";
+import { Link } from 'react-router-dom';
 import { Card, Image } from 'semantic-ui-react';
 import ItemCount from "../ItemCount/ItemCount";
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
@@ -14,7 +15,9 @@ const Item = ({ Id, Producto, Precio, Foto }) => (
 				<span className='date'>{Precio}</span>
 			</Card.Meta>
 			<Card.Description>
+				<Link to={`/detalles/${Id}`} className="btn btn-primary">
 				<button>Ver más</button>
+				</Link>
 			</Card.Description>
 		</Card.Content>
 	</Card>
