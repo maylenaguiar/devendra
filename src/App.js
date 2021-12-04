@@ -10,6 +10,7 @@ import Contact from '../src/Views/Contact/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import ItemDetail from "./components/ItemDetailContainer/ItemDetail";
 function App() {
   return (
     

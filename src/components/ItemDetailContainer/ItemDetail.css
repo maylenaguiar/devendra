@@ -1,0 +1,8 @@
+.contador{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin: 20px;
+    padding: 20px;
+    width: 100px;
+}

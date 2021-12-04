@@ -7,7 +7,7 @@ const ItemDetailContainer = () => {
     
     useEffect(() => {
        setTimeout(()=>{
-        fetch ("https://fakestoreapi.com/products?limit=4")
+        fetch ("https://fakestoreapi.com/products?limit=1")
         .then((response) => response.json())
         .then((json)=> setItems(json));
        }, 2000) 

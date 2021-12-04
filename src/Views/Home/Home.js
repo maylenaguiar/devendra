@@ -1,10 +1,11 @@
 import React from 'react';
-// import CharacterList from '../../components/CharactersList/CharacterList';
+import "./Home.css";
+import Foto from '../../components/imagenes/salesHimalaya.jpg';
 
 function Home() {
 	return (
 		<div style={{ padding: 40 }}>
-			{/* <CharacterList /> */}
+		<img className="portada" src = {Foto} alt="Foto"></img>	
 		</div>
 	);
 }
