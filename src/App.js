@@ -11,10 +11,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import ItemDetail from "./components/ItemDetailContainer/ItemDetail";
+import { CartProvider } from "./CartContext";
+
 function App() {
   return (
     
     <Router>
+      <CartProvider>
       <Header />
       <NavBar />
       <div className="App">
@@ -33,6 +36,7 @@ function App() {
       <Route path= '/Products/:Aromas' exact element={<ItemListContainer />}/>
       <Route path= '/detalles/:Id' exact element={<ItemDetailContainer />}/>
       </Routes>
+      </CartProvider>
     </Router>
     
   );
