@@ -1,12 +1,12 @@
 import React from 'react';
 import Item from "./Item";
 
-const ItemList = ({ productos }) => {
+const ItemList = ({ items }) => {
 	
 	return (
 			<div className="cards">
-				{productos.map((product) => {
-					return <Item key={product.Id} {...product} />;
+				{items.map((item) => {
+					return <Item key={item.Id} item={item} />;
 				})}
 			</div>
 	);

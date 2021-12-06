@@ -5,6 +5,8 @@ import NavBar from "./components/NavBar/NavBar";
 
 import Home from '../src/Views/Home/Home';
 import About from '../src/Views/About/About';
+import Category from '../src/Views/Category/Category';
+import ItemView from '../src/Views/ItemView/ItemView';
 import Contact from '../src/Views/Contact/Contact';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -29,12 +31,11 @@ function App() {
         </h2>
       </div>
       <Routes>
-      <Route path='/' exact element={<Home />}/>
-      <Route path='/About' exact element={<About />} />
-      <Route path='/Products' exact element={<ItemListContainer />} />
-      <Route path='/Contact' exact element={<Contact />} />
-      <Route path= '/Products/:Aromas' exact element={<ItemListContainer />}/>
-      <Route path= '/detalles/:Id' exact element={<ItemDetailContainer />}/>
+      <Route path='/' element={<Home />}/>
+      <Route path='/About' element={<About />} />
+      <Route path='/Contact' element={<Contact />} />
+      <Route path='/category/:categoryId' element={<Category />}/>
+      <Route path='/item/:id' element={<ItemView />}/>
       </Routes>
       </CartProvider>
     </Router>

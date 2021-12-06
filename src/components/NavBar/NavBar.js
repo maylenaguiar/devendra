@@ -7,12 +7,10 @@ const NavBar = () => {
     <>
     <nav className="container">
       <ul>
-        <Link className="naveg" to='/'>Inicio
-        </Link>
-        <Link className="naveg" to='/About'>Sobre mi
-        </Link>
-        <Link className="naveg" to='/Products'>Productos
-        </Link>
+        <Link className="naveg" to='/'>Inicio</Link>
+        <Link className="naveg" to='/About'>Sobre mi</Link>
+        <Link className="naveg" to='/category/MLA1574'>Artículos Limpieza</Link>
+        <Link className="naveg" to='/category/MLA1459'>Viviendas</Link>
         <Link className="naveg" to='/Contact'>Contacto
         </Link>
         <CartWidget />

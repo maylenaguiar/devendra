@@ -4,20 +4,21 @@ import Item from '../Items/Item';
 import './ItemDetail.css';
 import { CartContext } from '../../CartContext';
 
-const ItemDetail = ({data}) => {
+const ItemDetail = ({ item }) => {
   const [cart,setCart, foo] = useContext(CartContext);
   console.log(cart);
 
  const newState = [{Id: 1, Producto:"Sahumerios", Precio:"$100", Cantidad: 3}];
 
     return (
-        <div>
-        <p>{data.description}</p>
+        <div className='detalle'>
+        <img src={item.thumbnail} alt={item.title} width={300} />
+            <h2>{item.price}</h2>
+            <h3>{item.title}</h3>
         <ItemCount />
         <button className='contador' onClick={() => setCart(newState)}>Comprar</button>
         <button className='contador' onClick={() => setCart([])}>Eliminar</button>
         <button className='contador' onClick={() => foo()}>Finalizar</button>
-        
         </div>
     )
 };
