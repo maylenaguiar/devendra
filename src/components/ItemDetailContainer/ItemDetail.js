@@ -3,6 +3,7 @@ import ItemCount from '../ItemCount/ItemCount';
 import Item from '../Items/Item';
 import './ItemDetail.css';
 import { CartContext } from '../../CartContext';
+import { Link } from 'react-router-dom';
 
 const ItemDetail = ({ item }) => {
   const [cart,setCart, foo] = useContext(CartContext);
@@ -18,7 +19,8 @@ const ItemDetail = ({ item }) => {
         <ItemCount />
         <button className='contador' onClick={() => setCart(newState)}>Comprar</button>
         <button className='contador' onClick={() => setCart([])}>Eliminar</button>
-        <button className='contador' onClick={() => foo()}>Finalizar</button>
+        <Link to ='/Cart'> <button className='contador' onClick={() => foo()}>Finalizar Compra</button>
+        </Link>
         </div>
     )
 };
